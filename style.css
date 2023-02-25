@@ -1,0 +1,238 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+header {
+  /* ჰედერი*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+}
+
+.get-started {
+  /* დივი სადაც მოთავსებულია get started  ტექსტი - ჰედერში*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #13183f;
+  border-radius: 28px;
+  width: 140px;
+  height: 56px;
+}
+
+.text1 {
+  color: white; /*ჰედერის ტექსტი*/
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* section ნაწილი*/
+
+section {
+  margin-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.marcxena {
+  /*section ნაწილის ზედა ნაწილის დივი  შედის 3 ელემენტი*/
+
+  width: 343px;
+}
+
+.marcxena-h1 {
+  /* section-ის ზედა ნაწილის სათაური*/
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  width: 100%;
+  color: #13183f;
+}
+.marcxena-p {
+  /* section-ის ზედა ნაწილის სათაურის ქვეშა ტექსტი*/
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #83869a;
+}
+.marcxena-bolo {
+  /* section-ის ზედა ნაწილის ბოლო დივი get started*/
+  width: 167px;
+  height: 63px;
+  border-radius: 31.5px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marcxena-p2 {
+  /* section-ის ზედა ნაწილის ბოლო დივში მოთავსებული ტექსტი get started*/
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.gogos-surati {
+  /* დივი გოგოს სურათით*/
+
+  background-image: url("./image/image-hero-mobile.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 238.72px;
+  height: 200px;
+  align-self: center;
+}
+
+.gogostext {
+  /*  გოგოს სურათის ქვეშა სარეკლამო ტექსის დივი*/
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+  width: 286px;
+  height: 120px;
+  padding-top: 24px;
+  padding-left: 28px;
+  padding-right: 29px;
+  padding-bottom: 32px;
+}
+.h1-gogotext {
+  /*  გოგოს სურათის ქვეშა სარეკლამო ტექსის დივში შემავალი ტექსი*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.yuti {
+  /*ეს დივი გამოდგება 5 ცალი ყუთისთვის*/
+
+  margin-top: 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding-left: 28px;
+  padding-right: 29px;
+  padding-bottom: 32px;
+}
+.h1-animation {
+  /*ანიმაციის სათაური*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+  width: 101px;
+  height: 25px;
+}
+.p-qvedateqstebi {
+  /* ეს გამოდგება ყველა ქვედა ტექსტისთვის*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869a;
+  width: 286px;
+}
+.h2-getstarted {
+  /*ეს გამოდგება პირველის გარდა ყველა დანარჩენი get started-თვის*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f74780;
+  width: 104px;
+  height: 28px;
+}
+
+.h1-design {
+  /* design სათაური*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+  width: 68px;
+  height: 25px;
+}
+
+.h1-photography {
+  /*ptotography სათაური*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+  width: 129px;
+  height: 25px;
+}
+
+.h1-crypto {
+  /*crypto-ს სათაურო*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+  width: 70px;
+  height: 25px;
+}
+
+.h1-business {
+  /*business სათაური*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+  width: 87px;
+  height: 25px;
+}
+
+/*footer  ნაწილი*/
+footer {
+  background: #13183f;
+  width: 375px;
+  height: 120px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.get-started-footer {
+  /*get started დივი*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  border-radius: 28px;
+  width: 140px;
+  height: 48px;
+}
+
+.h1-footer {
+  /*skilled ტექსტი*/
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+}
