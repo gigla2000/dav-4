@@ -81,18 +81,14 @@ section {
   color: #ffffff;
 }
 
-.gogos-surati {
-  /* დივი გოგოს სურათით*/
-
-  background-image: url("./image/image-hero-mobile.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 238.72px;
-  height: 200px;
-  align-self: center;
+.gogo-mobile {
+  display: block;
+}
+.gogo-desktop {
+  display: none;
 }
 
-.gogostext {
+.reklamtext {
   /*  გოგოს სურათის ქვეშა სარეკლამო ტექსის დივი*/
   background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   border-radius: 10px;
@@ -103,7 +99,7 @@ section {
   padding-right: 29px;
   padding-bottom: 32px;
 }
-.h1-gogotext {
+.h1-reklamtext {
   /*  გოგოს სურათის ქვეშა სარეკლამო ტექსის დივში შემავალი ტექსი*/
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -116,15 +112,22 @@ section {
 .yuti {
   /*ეს დივი გამოდგება 5 ცალი ყუთისთვის*/
 
-  margin-top: 16px;
+  margin-top: 35px;
   background: #ffffff;
   border-radius: 10px;
   padding-left: 28px;
   padding-right: 29px;
   padding-bottom: 32px;
+  position: relative;
 }
-.h1-animation {
-  /*ანიმაციის სათაური*/
+
+.icon-logo {
+  /* position: absolute; */
+  transform: translate(-9px, -24px);
+}
+.h1-saerto {
+  /* ეს h1 5 ცალი ყუთის h1-თვის*/
+
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 800;
@@ -133,6 +136,11 @@ section {
   color: #13183f;
   width: 101px;
   height: 25px;
+}
+.h1-animation {
+  /*ანიმაციის სათაური*/
+
+  width: 101px;
 }
 .p-qvedateqstebi {
   /* ეს გამოდგება ყველა ქვედა ტექსტისთვის*/
@@ -157,50 +165,24 @@ section {
 
 .h1-design {
   /* design სათაური*/
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 25px;
-  color: #13183f;
   width: 68px;
-  height: 25px;
 }
 
 .h1-photography {
   /*ptotography სათაური*/
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 25px;
-  color: #13183f;
+
   width: 129px;
-  height: 25px;
 }
 
 .h1-crypto {
   /*crypto-ს სათაურო*/
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 25px;
-  color: #13183f;
+
   width: 70px;
-  height: 25px;
 }
 
 .h1-business {
   /*business სათაური*/
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 25px;
-  color: #13183f;
   width: 87px;
-  height: 25px;
 }
 
 /*footer  ნაწილი*/
@@ -235,4 +217,79 @@ footer {
   font-size: 28px;
   line-height: 35px;
   color: #ffffff;
+}
+
+/*მედიაქუერით გავსტილოთ დესკტოპ ვერსიისთვის 720 პიქსელი და მეტი*/
+
+@media (min-width: 720px) {
+  header {
+    /* ჰედერი*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1080px;
+  }
+
+  .marcxena {
+    /*section ნაწილის ზედა ნაწილის დივი  შედის 3 ელემენტი*/
+
+    width: 457px;
+  }
+  .gogo-mobile {
+    display: none;
+  }
+  .gogo-desktop {
+    display: block;
+    /* position: absolute; */
+  }
+
+  .desktop1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    margin-bottom: 20px;
+  }
+
+  .desktop2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+  .desktop3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  .yuti {
+    height: 322px;
+    flex-grow: 1;
+    margin: 10px;
+  }
+  .reklamtext {
+    /*  გოგოს სურათის ქვეშა სარეკლამო ტექსის დივი*/
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+
+    border-radius: 10px;
+    padding-left: 28px;
+    padding-right: 29px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 296px;
+    margin: 10px;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+  }
 }
