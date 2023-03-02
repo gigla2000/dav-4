@@ -126,7 +126,7 @@ section {
   transform: translate(-9px, -24px);
 }
 .h1-saerto {
-  /* ეს h1 5 ცალი ყუთის h1-თვის*/
+  /* ეს გამოდგება 5 ყუთის დასათაურებლად*/
 
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -137,11 +137,7 @@ section {
   width: 101px;
   height: 25px;
 }
-.h1-animation {
-  /*ანიმაციის სათაური*/
 
-  width: 101px;
-}
 .p-qvedateqstebi {
   /* ეს გამოდგება ყველა ქვედა ტექსტისთვის*/
   font-family: "Plus Jakarta Sans";
@@ -163,28 +159,6 @@ section {
   height: 28px;
 }
 
-.h1-design {
-  /* design სათაური*/
-  width: 68px;
-}
-
-.h1-photography {
-  /*ptotography სათაური*/
-
-  width: 129px;
-}
-
-.h1-crypto {
-  /*crypto-ს სათაურო*/
-
-  width: 70px;
-}
-
-.h1-business {
-  /*business სათაური*/
-  width: 87px;
-}
-
 /*footer  ნაწილი*/
 footer {
   background: #13183f;
@@ -192,10 +166,16 @@ footer {
   height: 120px;
   margin-top: 80px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-div {
+  /*footer-ის დივი*/
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
+
+  width: 375px;
 }
 
 .get-started-footer {
@@ -227,14 +207,20 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1540px;
-    
+    width: 1400px;
+  }
+
+  section {
+    margin-top: 40px;
+    padding-left: 60px;
+    padding-right: 16px;
+    width: 1400px;
   }
 
   .marcxena {
-    /*section ნაწილის ზედა ნაწილის დივი  შედის 3 ელემენტი*/
+    /*section ნაწილის ზედა ნაწილის დივი  შედის 3 ელემენტი - წითელი ფონიანი რეკლამა*/
 
-    width: 457px;
+    /* width: 457px; */
   }
   .gogo-mobile {
     display: none;
@@ -248,7 +234,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
     margin-bottom: 20px;
   }
 
@@ -285,12 +271,19 @@ footer {
     align-items: center;
     height: 296px;
     margin: 10px;
+    flex-grow: 1;
   }
   footer {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 200px;
+  }
+  .footer-div {
+    /*footer-ის დივი*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
   }
 }
