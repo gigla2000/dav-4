@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 375px;
+  width: 300px;
 }
 
 .get-started {
@@ -36,15 +36,12 @@ header {
 
 section {
   margin-top: 40px;
-  padding-left: 60px;
-  padding-right: 16px;
+  padding-left: 120px;
+  padding-right: 60px;
 }
 .marcxena {
-  /*section ნაწილის ზედა ნაწილის დივი  შედის 3 ელემენტი*/
-
   width: 343px;
 }
-
 .marcxena-h1 {
   /* section-ის ზედა ნაწილის სათაური*/
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -168,6 +165,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .footer-div {
   /*footer-ის დივი*/
@@ -209,6 +207,10 @@ footer {
     align-items: center;
     width: 1024px;
   }
+  .get-started:hover{  /*ჰდერში get started დივმა შეიცვალოს ფერი*/
+    cursor: pointer;
+    background: #666CA3;
+  }
 
   section {
     margin-top: 40px;
@@ -216,12 +218,34 @@ footer {
     padding-right: 16px;
     width: 1024px;
   }
-
   .marcxena {
-    /*section ნაწილის ზედა ნაწილის დივი  შედის 3 ელემენტი - წითელი ფონიანი რეკლამა*/
-
-    /* width: 457px; */
+    width: 457px;
+    
   }
+
+  .marcxena-bolo:hover{
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  }
+  .marcxena-h1 {
+    /* section-ის ზედა ნაწილის სათაური*/
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    width: 182%;
+    color: #13183f;
+  }
+  .marcxena-p {
+    /* section-ის ზედა ნაწილის სათაურის ქვეშა ტექსტი*/
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #83869a;
+    
+  }
+  
   .gogo-mobile {
     display: none;
   }
@@ -237,6 +261,7 @@ footer {
 
     margin-bottom: 20px;
   }
+  
 
   .desktop2 {
     display: flex;
@@ -244,6 +269,11 @@ footer {
     align-items: center;
 
     margin-bottom: 20px;
+    width: 1086px;
+  }
+  .h2-getstarted:hover{
+    cursor: pointer;
+    color: #FFA7C3;
   }
   .desktop3 {
     display: flex;
@@ -255,7 +285,7 @@ footer {
 
   .yuti {
     height: 322px;
-    flex-grow: 1;
+    
     margin: 10px;
   }
   .reklamtext {
@@ -271,8 +301,11 @@ footer {
     align-items: center;
     height: 296px;
     margin: 10px;
-    flex-grow: 1;
+    width: 286px;
+    /* flex-grow: 1; */
   }
+
+  
   footer {
     width: 100%;
     display: flex;
@@ -288,5 +321,10 @@ footer {
   }
   .h1-footer {
     margin-left: 120px;
+  }
+  .get-started-footer:hover{
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    
   }
 }
