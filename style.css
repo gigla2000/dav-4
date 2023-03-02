@@ -207,14 +207,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1400px;
+    width: 1024px;
   }
 
   section {
     margin-top: 40px;
     padding-left: 60px;
     padding-right: 16px;
-    width: 1400px;
+    width: 1024px;
   }
 
   .marcxena {
@@ -284,6 +284,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1400px;
+    width: 1200px;
+  }
+  .h1-footer {
+    margin-left: 120px;
   }
 }
