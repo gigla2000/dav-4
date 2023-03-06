@@ -239,6 +239,15 @@ footer {
     background: #666ca3;
   }
 
+  .skilled{
+    margin-left: 40px;
+  }
+  
+  .get-started{
+    margin-right: -78px; 
+    
+  }
+
   section {
     margin-top: 40px;
     padding-left: 60px;
